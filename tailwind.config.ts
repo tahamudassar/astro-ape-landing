@@ -52,13 +52,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Cyberpunk specific colors
-				'neon-orange': 'hsl(var(--neon-orange))',
-				'neon-teal': 'hsl(var(--neon-teal))',
+				// Neon Purple Theme
 				'neon-purple': 'hsl(var(--neon-purple))',
-				'cyber-blue': 'hsl(var(--cyber-blue))',
+				'neon-purple-bright': 'hsl(var(--neon-purple-bright))',
+				'neon-purple-glow': 'hsl(var(--neon-purple-glow))',
 				'dark-bg': 'hsl(var(--dark-bg))',
 				'dark-surface': 'hsl(var(--dark-surface))',
+				'dark-charcoal': 'hsl(var(--dark-charcoal))',
+				'neon': 'hsl(var(--neon))',
+				'cyber': 'hsl(var(--cyber))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
