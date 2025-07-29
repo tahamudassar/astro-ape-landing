@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-dark-surface/90 backdrop-blur-md border-b border-neon-purple/20' 
+        ? 'bg-dark-surface/90 backdrop-blur-md border-b border-neon-orange/20' 
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-6">
@@ -42,9 +42,9 @@ const Navbar = () => {
           {/* Logo */}
           <button 
             onClick={() => scrollToSection('hero')}
-            className="text-2xl font-black text-neon-purple neon-glow hover:text-neon-purple-bright transition-colors"
+            className="text-2xl font-black text-neon hover:text-neon-teal transition-colors"
           >
-            ASTRO<span className="text-neon-purple-bright">APE</span>
+            ASTRO<span className="text-cyber">APE</span>
           </button>
 
           {/* Desktop Navigation */}
@@ -53,7 +53,7 @@ const Navbar = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-foreground hover:text-neon-purple hover:neon-glow transition-colors font-medium"
+                className="text-foreground hover:text-neon-orange transition-colors font-medium"
               >
                 {item.label}
               </button>
@@ -73,7 +73,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground hover:text-neon-purple transition-colors"
+            className="md:hidden text-foreground hover:text-neon-orange transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -82,13 +82,13 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 bg-dark-surface/95 backdrop-blur-md rounded-lg mt-2 border border-neon-purple/20">
+          <div className="md:hidden py-4 bg-dark-surface/95 backdrop-blur-md rounded-lg mt-2 border border-neon-orange/20">
             <div className="flex flex-col space-y-4 px-4">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-foreground hover:text-neon-purple transition-colors font-medium text-left py-2"
+                  className="text-foreground hover:text-neon-orange transition-colors font-medium text-left py-2"
                 >
                   {item.label}
                 </button>
